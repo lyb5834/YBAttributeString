@@ -13,6 +13,9 @@
 		0C12ED091EADF80C00E65F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C12ED071EADF80C00E65F46 /* Main.storyboard */; };
 		0C12ED0B1EADF80C00E65F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C12ED0A1EADF80C00E65F46 /* Assets.xcassets */; };
 		0C12ED0E1EADF80C00E65F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C12ED0C1EADF80C00E65F46 /* LaunchScreen.storyboard */; };
+		0C12ED1D1EADF85E00E65F46 /* NSString+YBAttributeText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12ED181EADF85E00E65F46 /* NSString+YBAttributeText.m */; };
+		0C12ED1E1EADF85E00E65F46 /* NSAttributedString+YBAttributeText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12ED1A1EADF85E00E65F46 /* NSAttributedString+YBAttributeText.m */; };
+		0C12ED1F1EADF85E00E65F46 /* YBAttributeMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C12ED1C1EADF85E00E65F46 /* YBAttributeMake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		0C12ED0A1EADF80C00E65F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C12ED0D1EADF80C00E65F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C12ED0F1EADF80C00E65F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C12ED161EADF84D00E65F46 /* YBAttributeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBAttributeString.h; sourceTree = "<group>"; };
+		0C12ED171EADF85E00E65F46 /* NSString+YBAttributeText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YBAttributeText.h"; sourceTree = "<group>"; };
+		0C12ED181EADF85E00E65F46 /* NSString+YBAttributeText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YBAttributeText.m"; sourceTree = "<group>"; };
+		0C12ED191EADF85E00E65F46 /* NSAttributedString+YBAttributeText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YBAttributeText.h"; sourceTree = "<group>"; };
+		0C12ED1A1EADF85E00E65F46 /* NSAttributedString+YBAttributeText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YBAttributeText.m"; sourceTree = "<group>"; };
+		0C12ED1B1EADF85E00E65F46 /* YBAttributeMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBAttributeMake.h; sourceTree = "<group>"; };
+		0C12ED1C1EADF85E00E65F46 /* YBAttributeMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBAttributeMake.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 				0C12ED021EADF80C00E65F46 /* AppDelegate.m */,
 				0C12ED041EADF80C00E65F46 /* ViewController.h */,
 				0C12ED051EADF80C00E65F46 /* ViewController.m */,
+				0C12ED151EADF83800E65F46 /* YBAttributeString */,
 				0C12ED071EADF80C00E65F46 /* Main.storyboard */,
 				0C12ED0A1EADF80C00E65F46 /* Assets.xcassets */,
 				0C12ED0C1EADF80C00E65F46 /* LaunchScreen.storyboard */,
@@ -77,6 +88,20 @@
 				0C12ECFF1EADF80C00E65F46 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C12ED151EADF83800E65F46 /* YBAttributeString */ = {
+			isa = PBXGroup;
+			children = (
+				0C12ED161EADF84D00E65F46 /* YBAttributeString.h */,
+				0C12ED171EADF85E00E65F46 /* NSString+YBAttributeText.h */,
+				0C12ED181EADF85E00E65F46 /* NSString+YBAttributeText.m */,
+				0C12ED191EADF85E00E65F46 /* NSAttributedString+YBAttributeText.h */,
+				0C12ED1A1EADF85E00E65F46 /* NSAttributedString+YBAttributeText.m */,
+				0C12ED1B1EADF85E00E65F46 /* YBAttributeMake.h */,
+				0C12ED1C1EADF85E00E65F46 /* YBAttributeMake.m */,
+			);
+			path = YBAttributeString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C12ED1D1EADF85E00E65F46 /* NSString+YBAttributeText.m in Sources */,
+				0C12ED1F1EADF85E00E65F46 /* YBAttributeMake.m in Sources */,
 				0C12ED061EADF80C00E65F46 /* ViewController.m in Sources */,
+				0C12ED1E1EADF85E00E65F46 /* NSAttributedString+YBAttributeText.m in Sources */,
 				0C12ED031EADF80C00E65F46 /* AppDelegate.m in Sources */,
 				0C12ED001EADF80C00E65F46 /* main.m in Sources */,
 			);
@@ -310,6 +338,7 @@
 				0C12ED141EADF80C00E65F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
