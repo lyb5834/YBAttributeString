@@ -1,5 +1,5 @@
 # YBAttributeString
-像Masonry一样快速创建AttributedString/a fast way to create attributedString like Masonry
+用Masonry的语法写NSAttributedString/a fast way to create attributedString like Masonry
 
 #  效果图
  ![(演示效果)](http://7xt3dd.com1.z0.glb.clouddn.com/YBAttributeStringAnimation.gif)
