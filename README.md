@@ -25,7 +25,7 @@
 
  # 注意
 * 设置`NSParagraphStyleAttributeName`相关属性的时候，结尾必须是`yb_all()`,不然无效
-* 设置相关属性的时候，结尾必须是`yb_location(integer)`,不然无效
+* 设置`NSAttachmentAttributeName`相关属性的时候，结尾必须是`yb_location(integer)`,不然无效
 
 # cocoaPods 支持
  * 只需在`Podfile`中加入`pod 'YBAttributeString'`后`pod install`即可
