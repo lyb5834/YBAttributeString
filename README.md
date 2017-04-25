@@ -16,9 +16,8 @@
 * xcode 8.3 以后，block的get方法也会自动补全了哦，使用本框架更方便了
 
  # 用法
-*首先 `[text yb_makeAttributes:^(YBAttributeMake *make) {
-   
-}];`
+* 首先 
+`[text yb_makeAttributes:^(YBAttributeMake *make) {        }];`
 * 普通用法
 `make.yb_font([UIFont systemFontOfSize:20]).yb_range(10, 50);`
 * 快捷用法
